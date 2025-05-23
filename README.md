@@ -31,5 +31,3 @@ Ce projet est un script Python conçu pour nettoyer automatiquement des fichiers
 ## Contribuer
 Les contributions sont les bienvenues ! Veuillez soumettre une *issue* ou une *pull request* pour toute amélioration ou correction.
 
-## Licence
-Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
