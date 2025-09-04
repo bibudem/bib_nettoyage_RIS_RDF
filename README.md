@@ -5,7 +5,7 @@
 Ce projet est un script Python conçu pour nettoyer automatiquement des fichiers `.rdf` et `.ris` en supprimant certaines balises ou lignes spécifiques. Il est conçu pour être simple à utiliser, même si vous n'avez pas de connaissances techniques.
 
 ## Fonctionnalités
-- Supprime les balises `<DC:subject>` et `<dcterms:abstract>` dans les fichiers `.rdf`
+- Supprime les balises `<DC:subject>` , `<dcterms:abstract>` et `<dc:description>` dans les fichiers `.rdf`
 - Supprime les lignes commençant par `KW  -` (mots-clés) et `AB  -` (résumés) dans les fichiers `.ris`
 - Crée des copies corrigées dans un dossier nommé `fichier corrigé`
 - Affiche un résumé des éléments supprimés
@@ -22,6 +22,10 @@ Ce projet est un script Python conçu pour nettoyer automatiquement des fichiers
 1. Placez tous vos fichiers `.rdf` et `.ris` dans le même dossier que ce script.
 2. Double-cliquez sur le fichier `bib_nettoyage_RIS_RDF.py` (ou faites un clic droit > Ouvrir avec > Python).
 3. Une fenêtre s'ouvrira et vous demandera si les fichiers sont bien placés. Cliquez sur "Oui" pour lancer le nettoyage.
+
+Notez qu'une version exécutable est disponible sur le dépôt GitHub (https://github.com/bibudem/bib_nettoyage_RIS_RDF/releases/download/1.0/Nettoyeur_Zotero.exe)
+Elle a été produite avec pyinstaller en avec la commande suivante: pyinstaller --onefile --windowed --icon=sceau_bib.ico bib_nettoyage_RIS_RDF.py
+Le fichier sceau_bib.ico est disponible sur le dépôt GitHub
 
 ## Résultats attendus
 - Un dossier nommé `fichiers nettoyes` sera créé automatiquement.
